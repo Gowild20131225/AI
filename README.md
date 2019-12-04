@@ -58,6 +58,7 @@ docker pull zb1840/kbqa:v1
 mkdir /opt/user
 
 用命令启动docker里的服务服务：
+
 docker run -it -v /opt/user:/opt/user -p 29999:29999 -p 3004:3004   -d zb1840/kbqa:v1 /bin/bash &
 
 running......
