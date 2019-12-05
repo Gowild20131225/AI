@@ -51,7 +51,7 @@ docker版本Docker version 18.09.7，
 
 在linux系统安装docker后使用命令安装镜像：
 
-docker pull zb1840/kbqa:v1
+docker pull gowild20131225/qa:v1
 
 在你的系统新建一个空的目录 /opt/user  来放入日志和系统生成的各种临时文件。
 
@@ -59,10 +59,10 @@ mkdir /opt/user
 
 用命令启动docker里的服务服务：
 
-docker run -it -v /opt/user:/opt/user -p 29999:29999 -p 3004:3004   -d zb1840/kbqa:v1 /bin/bash &
+docker run -it -v /opt/user:/opt/user -p 29999:29999 -p 3004:3004   -d gowild20131225/qa:v1 /bin/bash &
 
 running......
-三分钟后 ,服务加载数据启动完成，并自动生成自测日志  /opt/user/firstrun.log. 
+1分钟后 ,服务加载数据启动完成，并自动生成自测日志  /opt/user/firstrun.log. 
 然后你可以登陆系统自带的ssh服务管理虚拟环境中的服务，
 ssh -p 29999  root@127.0.0.1
 密码是六个空格，登陆。
